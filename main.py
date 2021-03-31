@@ -77,7 +77,7 @@ def get_content(plus_item):
     r = requests.post(url, data=payload)
 
     if r.json()["ret"] == 0:
-        print('易烊千玺：' + r.json()["data"]["answer"])
+        print('小白：' + r.json()["data"]["answer"])
     else:
         print('今天我生病了，我很快就会好起来的！')
         sys.exit()
